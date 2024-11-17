@@ -1,7 +1,7 @@
 class Beverage:
-    def __init__(self, beverage, price):
-        self.beverage = beverage
-        self.price = price
+    def __init__(self, name, price):
+        self.name = name
+        self.price = float(price)
 
     def __str__(self):
-        return f"{self.beverage} {self.price}"
+        return f"{self.name} - ${self.price:.2f}"
